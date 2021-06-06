@@ -7,6 +7,7 @@ const initialState = {
 export default function (state = initialState, action = {}) {
     switch (action.type) {
         case 'SET_GRAPH_DATA':
+            console.log('setting graph data')
             const { graphData } = action.payload
             return { ...state, graphData };
 

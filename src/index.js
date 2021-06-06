@@ -7,10 +7,14 @@ import {Provider} from "react-redux";
 import { MapContainer } from './pages/MapContainer';
 import { SidebarContainer } from './cmps/SidebarContainer';
 import { NodeGenerator } from './cmps/NodeGenerator';
+import { ImportCmp } from './cmps/ImportCmp';
 
 ReactDOM.render(
   <Provider store={store}>
+    <header style={{display:'flex', justifyContent: 'space-around', alignItems:'center'}}>
       <NodeGenerator />
+      <ImportCmp />
+      </header>
       <MapContainer />
       <SidebarContainer />
     </Provider>,

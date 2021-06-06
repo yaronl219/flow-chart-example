@@ -7,6 +7,11 @@ export function setGraphData(amount) {
     }
 }
 
+export function importGraphData(graphData) {
+    return dispatch => {
+        dispatch({type: 'SET_GRAPH_DATA', payload: {graphData}})
+    }
+}
 export function setSelectedNodes(selectedNodes) {
     return dispatch => {
         dispatch({type: 'SET_SELECTED_NODES', payload: {selectedNodes}})

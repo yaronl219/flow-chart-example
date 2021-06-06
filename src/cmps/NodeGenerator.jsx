@@ -13,9 +13,10 @@ function _NodeGenerator({setGraphData}) {
 
 
     return (
-        <div>
+        <div style={{display:'flex', flexDirection:'column'}}>
+            <h3>Generate random nodes</h3>
             <input value={amountOfNodes} onChange={onChangeAmountOfNodes} />
-            <button onClick={() => setGraphData(amountOfNodes)}>Redraw</button>
+            <button onClick={() => setGraphData(amountOfNodes)}>Generate</button>
         </div>
     )
 }

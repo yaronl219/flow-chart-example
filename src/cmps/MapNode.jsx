@@ -13,7 +13,7 @@ function _MapNode({selectedNodes, data, selected}) {
     }, [selectedNodes, data.Id])
 
     return (
-        <div style={{ borderRadius: '50%', height: 50, width: 50, border: '1px solid black', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <div style={{ borderRadius: '50%', height: 50, width: 50, border: '1px solid black', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', backgroundColor:'white' }}>
             <Handle type="source" position="bottom" />
             <div>{data.Id}</div>
             <div>{selected && 'selected'}</div>
